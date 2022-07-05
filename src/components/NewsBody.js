@@ -2,10 +2,6 @@ import React from "react";
 import categories from "../data/categories";
 import "../css-files/NewsBody.css";
 
-function handle(car) {
-  console.log(car);
-}
-
 export default function NewsBody({ setCategory }) {
   return (
     <>

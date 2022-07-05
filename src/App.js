@@ -2,11 +2,11 @@ import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
-import NewsBody from "./components/NewsBody";
+
 import Footer from "./components/Footer";
 import { useState, useEffect } from "react";
 import News from "./components/News";
-import { Top_bar } from "./components/Top_bar";
+import { TopBar } from "./components/TopBar";
 
 function App() {
   const [category, setCategory] = useState("general");
@@ -28,7 +28,7 @@ function App() {
       {/* ***************   Body   ****************** */}
 
       <div className="body_container">
-        <Top_bar />
+        <TopBar />
         <News category={category} />
       </div>
 

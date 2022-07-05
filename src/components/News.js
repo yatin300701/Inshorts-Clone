@@ -12,17 +12,20 @@ export default function News({ category }) {
   }
   const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
   useEffect(() => {
-    fetch(
-      `https://newsapi.org/v2/top-headlines?country=in&pageSize=${PageSize}&category=${category}&apiKey=${API_KEY}`
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
+    async function fetchMovies() {
+      await fetch(
+        `https://newsapi.org/v2/top-headlines?country=in&pageSize=${PageSize}&category=${category}&apiKey=${API_KEY}`
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
 
-        setNews(data.articles);
-        setTotalNews(data.totalResults);
-        console.log(TotalNews);
-      });
+          setNews(data.articles);
+          setTotalNews(data.totalResults);
+          console.log(TotalNews);
+        });
+    }
+    fetchMovies();
   }, [category, PageSize]);
   // console.log(News);
   return (

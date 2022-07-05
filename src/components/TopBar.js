@@ -1,7 +1,7 @@
 import React from "react";
 import "../css-files/top_bar.css";
 
-export const Top_bar = () => {
+export const TopBar = () => {
   return (
     <>
       <div className="top_bar">
