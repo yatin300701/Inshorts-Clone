@@ -1,0 +1,7 @@
+img {
+  width: 12vw;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+}

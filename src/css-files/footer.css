@@ -1,0 +1,29 @@
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  margin: 10px auto 0px;
+  justify-items: center;
+  align-items: center;
+}
+.container_footer {
+  display: flex;
+  margin: 10px auto;
+  justify-items: center;
+
+  align-items: center;
+}
+.icon {
+  height: 12px;
+  width: 12px;
+  color: black;
+  background-color: aqua;
+  border: 2px solid red;
+}
+.footer_parts_1 img {
+  width: 40px;
+}
+.dark_name {
+  font-size: 15px;
+  font-weight: 800;
+}
